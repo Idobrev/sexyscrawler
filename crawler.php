@@ -162,7 +162,7 @@
             $toMail = 'n.lukova92@gmail.com';
             $transport = (new Swift_SmtpTransport('smtp.mail.bg', 465, "ssl"))
                 ->setUsername($email)
-                ->setPassword('bgvoin');
+                ->setPassword('******'); // this should be confidential... the password to the email i.n.dobrev@mail.bg
 
             // Create the Mailer using your created Transport
             $mailer = new Swift_Mailer($transport);
